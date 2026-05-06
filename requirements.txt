@@ -1,0 +1,16 @@
+# Core RAG framework
+langchain==0.3.25
+langchain-community==0.3.23
+langchain-google-genai==2.1.4
+
+# Vector database
+faiss-cpu==1.9.0
+
+# Document loading
+pypdf==5.4.0
+
+# Environment variables
+python-dotenv==1.1.0
+
+# UI
+streamlit==1.45.1
