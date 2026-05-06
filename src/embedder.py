@@ -19,15 +19,6 @@ load_dotenv()
 
 
 def get_embedder() -> GoogleGenerativeAIEmbeddings:
-    """
-    Returns a configured Google Gemini embedding model.
-
-    The model is loaded once and reused across the pipeline.
-    It reads GOOGLE_API_KEY automatically from the environment.
-
-    Returns:
-        A GoogleGenerativeAIEmbeddings instance ready to embed text.
-    """
     api_key = os.getenv("GOOGLE_API_KEY")
 
     if not api_key or api_key == "your_google_api_key_here":
