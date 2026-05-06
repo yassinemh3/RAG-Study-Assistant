@@ -70,8 +70,17 @@ This project follows a standard **RAG pipeline**:
 rag-study-assistant/
 │── app.py              # Streamlit app
 │── requirements.txt   # Dependencies
+│── .env  
 │── README.md          # Project documentation
+
 ```
+## 📸 Screenshots
+
+### Upload Document
+![Upload Screenshot](assets/screenshots/upload.png)
+
+### Ask a Question
+![Answer Screenshot](assets/screenshots/answer.png)
 
 ---
 
@@ -149,37 +158,6 @@ When a user asks a question:
 ### 5. Answer Generation
 
 The retrieved context is passed to the LLM, which generates a grounded answer.
-
----
-
-## 🧪 Example
-
-**Question:**
-
-```
-What is overfitting?
-```
-
-**Answer:**
-
-```
-Overfitting occurs when a model learns the training data too well...
-```
-
-**Sources:**
-
-* Chunk 1 (Page 3)
-* Chunk 2 (Page 5)
-
----
-
-## 🚀 Future Improvements
-
-* 💬 Multi-turn conversation (chat history)
-* 📁 Support for TXT / Markdown files
-* ⚡ Caching embeddings for faster performance
-* 🧠 Local LLM support (e.g., Ollama)
-* 🌍 Deployment (Streamlit Cloud / Docker)
 
 ---
 
